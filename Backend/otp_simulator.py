@@ -15,8 +15,8 @@ aadhaar_otp_store = {}
 
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_USER = "credenticai@gmail.com"  # <-- Add your email here
-EMAIL_PASSWORD = "teli etmr aedf kxqw"  # Add your email password here
+EMAIL_USER = ""  # <-- Add your email here
+EMAIL_PASSWORD = ""  # Add your email password here
 
 
 def generate_email_otp(email: str) -> dict:
@@ -156,3 +156,4 @@ PennFinn""")
         print(f"[SIMULATOR] Sent AA to {email}:{url}")
     except Exception as e:
         print("Failed to send consent page url to the given email:", e)
+
