@@ -38,9 +38,9 @@ def _extract_mobile_from_row(row):
     return None
 
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "root123",
+    "host": "", #<--MySQL workbench host
+    "user": "", #<--MySQL workbench user
+    "password": "", #<--MySQL workbench user password
     "database": "credit_cards"
 }
 
@@ -169,4 +169,5 @@ def get_valid_cards(salary:float, cibil:int, major_keyword:str)->list[dict]:
     cursor.execute(query, ('%' + major_keyword + '%', int(cibil), float(salary)))
     rows = cursor.fetchall()
     conn.close()
+
     return clean_for_json(rows)
