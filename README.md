@@ -120,7 +120,7 @@ Visit  http://127.0.0.1:8000
 ## Author
 
 **Avyakt Varshney**  
-Agentic Systems Developer | AI & FinTech Enthusiast  
+Student | Agentic Systems Developer | AI & FinTech Enthusiast  
 
 Email: [avyaktvarshney@example.com]  
 GitHub: [https://github.com/AV1101](https://github.com/AV1101)
