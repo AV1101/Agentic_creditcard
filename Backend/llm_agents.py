@@ -31,7 +31,7 @@ from db_operations import (
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 logger = logging.getLogger("LoanAgent")
 
-with open(r"D:\Agentic_creditcard\Backend\\prompt.txt", "r") as f:
+with open(r"", "r") as f: #<--add prompt.txt directory here
     SYSTEM_PROMPT = f.read()
 
 MODEL_NAME = os.getenv("LLM_MODEL", "gemini-2.5-flash")
@@ -480,4 +480,5 @@ def test_run_gemini():
     print("--- Test Complete ---\n")
 
 if __name__ == "__main__":
+
     test_run_gemini()
